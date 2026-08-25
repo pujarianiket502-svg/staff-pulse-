@@ -103,16 +103,13 @@ staff-registration/
 
 ## 🚀 Getting Started
 
-### Option 1: Docker Compose (Recommended)
+### Option 1: Docker Compose 
 
 Run the complete multi-container setup (Node.js App, MongoDB, Prometheus, Grafana) with a single command:
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/yourusername/staff-registration.git
-cd staff-registration
 
-# 2. Build and launch all services
+#  Build and launch all services
 docker-compose up --build
 ```
 
@@ -195,12 +192,12 @@ The server integrates `prom-client` to measure system health and performance:
 
 ## ⚙️ Environment Variables
 
-Configure your `.env` file with the following keys:
+Configure  `.env` file with the following keys:
 
 ```env
 PORT=5000
 MONGO_URI=mongodb://127.0.0.1:27017/staffDB
-JWT_SECRET=your_super_secret_jwt_key_change_in_production
+JWT_SECRET=my_super_secret_jwt_key_change_in_production
 JWT_EXPIRES_IN=7d
 
 # Fixed Admin Credentials
